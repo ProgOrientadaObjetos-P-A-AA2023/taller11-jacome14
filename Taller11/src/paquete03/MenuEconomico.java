@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package paquete03;
 
 import paquete02.Menu;
@@ -10,8 +7,8 @@ public class MenuEconomico extends Menu {
 
     private double porcDesc;
 
-    public MenuEconomico(String cade, double valIni, double porcDes) {
-        super(cade, valIni);
+    public MenuEconomico(String nompl, double vi, double porcDes) {
+        super(nompl, vi);
         porcDesc = porcDes;
     }
 
@@ -26,6 +23,10 @@ public class MenuEconomico extends Menu {
 
     public double obtenerDescuentoP() {
         return porcDesc;
+    }
+    
+    public double obtenerValorcancelartotal() {
+        return valorMenu;
     }
 
     @Override

@@ -16,11 +16,11 @@ public class MenuCarta extends Menu {
     private double bebida;
     private double porcAdic;
 
-    public MenuCarta(String pl, double vi, double g, double b, double c) {
-        super(pl, vi);
+    public MenuCarta(String nompl, double vi, double g, double b, double porcA) {
+        super(nompl, vi);
         guarnicion = g;
         bebida = b;
-        porcAdic = c;
+        porcAdic =porcA;
 
     }
 
@@ -54,6 +54,7 @@ public class MenuCarta extends Menu {
         return porcAdic;
     }
 
+    @Override
     public double obtenerValorMenu() {
         return valorMenu;
     }

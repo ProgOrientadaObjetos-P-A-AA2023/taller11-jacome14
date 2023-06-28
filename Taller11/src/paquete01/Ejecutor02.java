@@ -47,6 +47,7 @@ public class Ejecutor02 {
             MenuEconomico m = new MenuEconomico(datos002[i][0],
                     Double.parseDouble(datos002[i][1]),
                     Double.parseDouble(datos002[i][2]));
+                    
             lista.add(m);
         }
         for (int i = 0; i < datos003.length; i++) {

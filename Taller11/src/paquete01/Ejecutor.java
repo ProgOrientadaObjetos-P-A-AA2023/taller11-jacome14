@@ -16,7 +16,7 @@ public class Ejecutor {
         List<Menu> lista = new ArrayList<>();
 
         MenuNinos Ninos1 = new MenuNinos("Niños 01", 2.00, 1.00, 1.50);
-        MenuNinos Ninos2 = new MenuNinos("Niños 02 ", 3.00, 1.00, 1.50);
+        MenuNinos Ninos2 = new MenuNinos("Niños 02", 3.00, 1.00, 1.50);
 
         MenuEconomico Economico1 = new MenuEconomico("Econo 001 ", 4.00, 25.00);
 
@@ -34,7 +34,7 @@ public class Ejecutor {
             lista.get(i).establecerValorMenu();
         }
 
-        Cuenta cuenta = new Cuenta("René Elizalde", lista, 10);
+        Cuenta cuenta = new Cuenta("René Elizalde", lista,10);
         cuenta.CalcularSubtotal();
         cuenta.calcularValorTotal();
 

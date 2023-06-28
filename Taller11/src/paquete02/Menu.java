@@ -6,8 +6,8 @@ public abstract class Menu {
     protected double valorMenu;
     protected double valorInicial;
 
-    public Menu(String pl, double vi) {
-        nombrePlato = pl;
+    public Menu(String nompl, double vi) {
+        nombrePlato =nompl;
         valorInicial = vi;
     }
 

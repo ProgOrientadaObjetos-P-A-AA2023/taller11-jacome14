@@ -15,17 +15,17 @@ public class MenuDelDia extends Menu {
     private double bebida;
     private double postre;
 
-    public MenuDelDia(String cade, double vi, double p, double b) {
-        super(cade, vi);
+    public MenuDelDia(String nompl, double vi, double p, double b) {
+        super(nompl, vi);
         postre = p;
         bebida = b;
     }
 
-    public void establecerPostre(double c) {
+    public void establecervalorPostre(double c) {
         postre = c;
     }
 
-    public void establecerBebida(double c) {
+    public void establecervalorBebida(double c) {
         bebida = c;
     }
 
@@ -34,12 +34,16 @@ public class MenuDelDia extends Menu {
         valorMenu = valorInicial + postre + bebida;
     }
 
-    public double obtenerPostre() {
+    public double obtenervalorPostre() {
         return postre;
     }
 
-    public double obtenerBebida() {
+    public double obtenervalorBebida() {
         return bebida;
+    }
+    
+    public double obtenerValorcancelartotal() {
+        return valorMenu;
     }
 
     @Override
@@ -52,8 +56,8 @@ public class MenuDelDia extends Menu {
                 + "\tValor del Menú: %.2f\n",
                 obtenerNombrePlato(),
                 obtenerValorMenuInicial(),
-                obtenerPostre(),
-                obtenerBebida(),
+                obtenervalorPostre(),
+                obtenervalorBebida(),
                 obtenerValorMenu());
 
         return reporte;

@@ -15,17 +15,17 @@ public class MenuNinos extends Menu {
     private double helado;
     private double pastel;
 
-    public MenuNinos(String cade, double vi, double h, double p) {
-        super(cade, vi);
+    public MenuNinos(String nompl, double vi, double h, double p) {
+        super(nompl, vi);
         helado = h;
         pastel = p;
     }
 
-    public void establecerHelado(double c) {
+    public void establecervalorHelado(double c) {
         helado = c;
     }
 
-    public void establecerPastel(double c) {
+    public void establecervalorPastel(double c) {
         pastel = c;
     }
 
@@ -34,14 +34,16 @@ public class MenuNinos extends Menu {
         valorMenu = valorInicial + helado + pastel;
     }
 
-    public double obtenerHelado() {
+    public double obtenervalorHelado() {
         return helado;
     }
 
-    public double obtenerPastel() {
+    public double obtenervalorPastel() {
         return pastel;
     }
-
+    public double obtenervalorcancelartotal() {
+        return valorMenu;
+    }
     @Override
     public String toString() {
         String cadena = String.format("Menú Del Dia \n"
@@ -52,8 +54,8 @@ public class MenuNinos extends Menu {
                 + "\tValor del Menú: %.2f\n",
                 obtenerNombrePlato(),
                 obtenerValorMenuInicial(),
-                obtenerHelado(),
-                obtenerPastel(),
+                obtenervalorHelado(),
+                obtenervalorPastel(),
                 obtenerValorMenu());
 
         return cadena;
